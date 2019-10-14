@@ -13,5 +13,67 @@
 /* color iconos de why choose us? */
 /*color de botones deslizantes */
 /* color de los iconos de la seccion SERVICES, en orden. */
+body {
+  margin: 0px;
+}
+
+.section {
+  padding: 60px 0 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.choose {
+  background-color: #004a99;
+}
+.choose .container3 {
+  color: white;
+}
+.choose h3,
+.choose h5 {
+  text-align: center;
+  margin: 0px;
+}
+.choose p {
+  text-align: center;
+  font-size: 15px;
+}
+.choose h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header {
+  padding-bottom: 60px;
+}
+
+.iconchoose {
+  color: #BFDDFE;
+  font-size: 48px;
+}
+
+.boxwhy {
+  background-color: #00458F;
+}
 
 /*# sourceMappingURL=main.css.map */
