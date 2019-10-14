@@ -1,0 +1,41 @@
+.choose {
+    background-color: $cobalt;
+
+    .container3 {
+
+        color: $white;
+    }
+
+    h3,
+    h5 {
+        text-align: center;
+        margin    : 0px;
+    }
+
+    p {
+        text-align: center;
+        font-size : 15px;
+    }
+
+    h5 {
+        font-size  : 22px;
+        font-weight: 600;
+    }
+
+}
+
+.header {
+    padding-bottom: 60px;
+
+}
+
+.iconchoose {
+    color    : $palecornflowerblue;
+    font-size: 48px;
+
+}
+
+.boxwhy {
+    background-color: $darkcerulean;
+
+}
