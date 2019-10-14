@@ -15,6 +15,7 @@
 /* color de los iconos de la seccion SERVICES, en orden. */
 body {
   margin: 0px;
+  line-height: 1.5;
 }
 
 .section {
@@ -57,23 +58,64 @@ h3 {
 .choose p {
   text-align: center;
   font-size: 15px;
+  line-height: 1.5;
 }
 .choose h5 {
   font-size: 22px;
   font-weight: 600;
+  margin: 0px 0px 20px 0px;
 }
-
-.header {
+.choose .header {
   padding-bottom: 60px;
 }
-
-.iconchoose {
+.choose .container3 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.choose .iconchoose {
   color: #BFDDFE;
   font-size: 48px;
+  padding-top: 15px;
 }
-
-.boxwhy {
+.choose .boxwhy {
   background-color: #00458F;
+  height: 100%;
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.choose .boxwhy a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.choose .boxwhy .textbox {
+  padding: 1.25rem;
+}
+.choose .separation {
+  margin: 0 0 30px 0;
+}
+.choose .marginp {
+  margin: 0px;
+}
+.choose .counters {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.choose .counters span {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.choose .item {
+  width: 50%;
+  text-align: center;
+}
+.choose .item p {
+  margin: 0 0 20px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
