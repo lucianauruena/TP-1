@@ -111,7 +111,8 @@ h2 {
 }
 
 .container {
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -140,7 +141,7 @@ p {
   line-height: 26px;
 }
 
-.primer-container-about {
+.container-style {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -188,6 +189,34 @@ p {
   height: auto;
   vertical-align: middle;
   border-style: none;
+}
+
+#services {
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background: #ecf5ff;
+  display: block;
+}
+
+.container2 {
+  max-width: 540px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.box {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 }
 
 .choose {
@@ -382,6 +411,10 @@ p {
 
 .clientssec {
   background: #ecf5ff;
+  width: 100%;
+}
+.clientssec p {
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

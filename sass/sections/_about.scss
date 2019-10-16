@@ -3,7 +3,8 @@
     padding: 60px 0;
 }
     .container{
-     width: 540px;
+     max-width: 540px;
+     width: 100%;
      padding-right: 15px;
      padding-left: 15px;
      margin-right: auto;
@@ -30,7 +31,7 @@
 
 }
 
-.primer-container-about{
+.container-style{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
