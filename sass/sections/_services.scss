@@ -9,6 +9,8 @@
         position: relative;
         padding-left: 15px;
         padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .box{
         padding: 30px;
@@ -23,4 +25,62 @@
         margin-left: 10px;
         box-shadow: 0 10px 29px 0 rgb(68, 88, 144, 0.1)
     }
-    
+    .icon1{
+        position: absolute;
+        left: 52px;
+        top: 48px;
+    }
+        .icon1 .fa{
+        font-size: 50px;
+        color: $brilliantrose;
+
+    }
+    .icon2{
+        position: absolute;
+        left: 52px;
+        top: 330px;
+    }
+        .icon2 .fa{
+        font-size: 50px;
+        color: $goldenpoppy;
+    }
+    .icon3{
+        position: absolute;
+        left: 52px;
+        top: 611px;
+    }
+        .icon3 .fa{
+        font-size: 50px;
+        color:  #3fcdc7;
+
+    }    
+    .icon4{
+        position: absolute;
+        left: 52px;
+        top: 872px;
+    }
+        .icon4 .fa{
+        font-size: 50px;
+        color: $limegreen;
+
+    }
+    .icon5{
+        position: absolute;
+        left: 52px;
+        top: 1152px;
+    }
+        .icon5 .fa{
+        font-size: 50px;
+        color: $pear;
+
+    }
+    .icon6{
+        position: absolute;
+        left: 52px;
+        top: 1431px;
+    }
+        .icon6 .fa{
+        font-size: 50px;
+        color: $royalblue;
+
+    }
