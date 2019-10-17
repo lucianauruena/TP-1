@@ -111,7 +111,8 @@ h2 {
 }
 
 .container {
-  width: 540px;
+  max-width: 540px;
+  position: relative;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -134,13 +135,13 @@ p {
   width: 100%;
   text-align: center;
   margin: 0 0 15px 0;
-  font-size: 15px;
+  font-size: 25px;
   padding-bottom: 20px;
   color: #556877;
   line-height: 26px;
 }
 
-.primer-container-about {
+.container-style {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -183,11 +184,132 @@ p {
   font-size: 14px;
 }
 
+.container-img {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
 .img-extra {
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
-  border-style: none;
+}
+
+.container-about {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 3rem !important;
+}
+
+#about .container-about h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#services {
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background: #ecf5ff;
+  display: block;
+}
+
+.container2 {
+  max-width: 540px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+
+.icon1 {
+  position: absolute;
+  left: 52px;
+  top: 48px;
+}
+
+.icon1 .fa {
+  font-size: 50px;
+  color: #ff689b;
+}
+
+.icon2 {
+  position: absolute;
+  left: 52px;
+  top: 330px;
+}
+
+.icon2 .fa {
+  font-size: 50px;
+  color: #e9bf06;
+}
+
+.icon3 {
+  position: absolute;
+  left: 52px;
+  top: 611px;
+}
+
+.icon3 .fa {
+  font-size: 50px;
+  color: #3fcdc7;
+}
+
+.icon4 {
+  position: absolute;
+  left: 52px;
+  top: 872px;
+}
+
+.icon4 .fa {
+  font-size: 50px;
+  color: #41cf2e;
+}
+
+.icon5 {
+  position: absolute;
+  left: 52px;
+  top: 1152px;
+}
+
+.icon5 .fa {
+  font-size: 50px;
+  color: #d6ff22;
+}
+
+.icon6 {
+  position: absolute;
+  left: 52px;
+  top: 1431px;
+}
+
+.icon6 .fa {
+  font-size: 50px;
+  color: #4680ff;
 }
 
 .choose {
@@ -382,6 +504,10 @@ p {
 
 .clientssec {
   background: #ecf5ff;
+  width: 100%;
+}
+.clientssec p {
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

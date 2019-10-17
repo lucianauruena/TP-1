@@ -3,7 +3,8 @@
     padding: 60px 0;
 }
     .container{
-     width: 540px;
+     max-width: 540px;
+     position: relative;
      padding-right: 15px;
      padding-left: 15px;
      margin-right: auto;
@@ -23,14 +24,14 @@
     width: 100%;
     text-align: center;
     margin: 0 0 15px 0;
-    font-size: 15px;
+    font-size: 25px;
     padding-bottom: 20px;
     color: $shuttlegrey;
     line-height: 26px;
 
 }
 
-.primer-container-about{
+.container-style{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -68,9 +69,31 @@
         font-size: 14px;
     }
 
+    .container-img{
+        margin: 20px 0;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    img{
+        vertical-align: middle;
+        border-style: none;
+    }
     .img-extra{
         max-width: 100%;
         height: auto;
-        vertical-align: middle;
-        border-style: none;
+    }
+
+    .container-about{
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 3rem!important;
+    }
+    #about .container-about h4{
+        font-weight: 600;
+        font-size: 24px;
     }
