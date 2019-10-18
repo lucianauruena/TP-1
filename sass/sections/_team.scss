@@ -1,3 +1,11 @@
+.section{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .teamsec {
     h3 {
         text-align: center;
@@ -16,3 +24,74 @@ p {
     color         : $shuttlegrey
 }
 
+.row-team{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.member-con{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.fadeInUp{
+    animation-name: fadeInUp;
+}
+.member{
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.member-info{
+    box-sizing: border-box;
+    opacity: 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+}
+.member-con:hover .member-info{
+    background: rgba(0, 62, 128, 0.7);
+    opacity: 1;
+    transition: 0.4s;
+}
+h4{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: white;
+}
+span{
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: white;
+}
+
+.member-con:hover .member-info-content{
+    margin-top: 0;
+    transition: margin 0.4s;
+}
+
+.member-info .social{
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+a{
+    transition: none;
+    color: white;
+}
