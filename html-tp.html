@@ -70,6 +70,9 @@
     </div>
     </section>
     <!--primer container-->
+    <!--
+        =================================== SECTION ABOUT US ====================================================
+    -->
     <section id="about" class="section">
         <div class="container">
             <!--header-->
@@ -138,6 +141,9 @@
     </section>
     <!--fin primer container-->
     <!--segundo container-->
+    <!-- 
+        =================================== SECTION SERVICES ==================================================
+    -->
     <section id="services" class="section">
         <div class="container2">
             <!--header-->
@@ -189,6 +195,9 @@
             </div>
         </div>
     </section>
+    <!-- 
+        ================================== SECTION CHOOSE ======================================================
+    -->
     <section id="choose" class="section choose">
         <div class="container3">
             <!--header-->
@@ -245,6 +254,9 @@
         </div>
     </section>
     <!--tercer container-->
+    <!--
+        ================================ SECTION PORTFOLIO ==========================================
+    -->
     <section class="section portfolio">
         <div class="container4">
             <header class="header">
@@ -352,6 +364,9 @@
             </div>
         </div>
     </section>
+    <!--
+        ================================== SECTION TESTIMONIALS =========================================
+    -->
     <section class="section sectestimonials">
         <header class="header">
             <h3>Testimonials</h3>
@@ -398,6 +413,9 @@
             </div>
         </div>
     </section>
+    <!--
+        =============================== SECTION TEAM =========================================
+    -->
     <section id="team" class="section teamsec">
         <header class="header">
             <h3>Team</h3>
@@ -483,7 +501,11 @@
         </div>
         </div>
     </section>
-    <section class="section clientssec">
+    <!--
+        ====================================== SECTION CLIENTS ==============================================
+    -->
+    <section id="clients" class="section clientssec">
+        <div class="container-clientes">
         <header class="header">
             <h3>Our Clients</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome
@@ -491,62 +513,91 @@
             </p>
         </header>
 
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="clientes-comun fadeInUp no-Gutters">
+            <div class="client-logo">
+                <img src="img/clients/client-1.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-2.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-3.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-4.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-5.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-6.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-7.png">
+                </div>
+            <div class="client-logo">
+                <img src="img/clients/client-8.png">
+                </div>
+        </div>
         </div>
     </section>
-    <section class="section">
+    <!--
+        ================================ SECTION CONTACT ===========================
+    -->
+    <section id="contact" class="section">
+        <div class="container-fluid">
         <header class="header">
             <h3>Contact Us</h3>
         </header>
         <div>
-            <!--segundo container
-            <div><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3581196170294!2d-74.00841558522731!3d40.71013224566788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses-419!2sar!4v1571022590212!5m2!1ses-419!2sar"
+            <div class="mapa-container">
+                <div class="map-detalles">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3581196170294!2d-74.00841558522731!3d40.71013224566788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses-419!2sar!4v1571022590212!5m2!1ses-419!2sar"
                     width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
             </div>
-        -->
             <div>
-                <div>
-                    <i class="fa fa-map-marker-alt"></i>
+                <div class="info">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <p>A108 Adam Street, NY 535022</p>
                 </div>
-                <div>
+                <div class="info">
                     <i class="fa fa-envelope"></i>
                     <p>info@example.com</p>
                 </div>
-                <div>
-                    <i class="fas fa-phone-alt"></i>
+                <div class="info">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
                     <p>+1 5589 55488 55</p>
                 </div>
             </div>
             <div>
-                <form>
-                    <div>
-                        <input type="text" placeholder="Your name" />
-                        <input type="text" placeholder="Your Email" />
-                    </div>
-                    <input type="text" placeholder="Subjetc" />
-                    <textarea placeholder="Message" rows="5"></textarea>
-                    <button type="submit">Send Message</button>
+                    <form action method="POST" role="form" class="contact-form">
+                    <div class="container-form">
+                        <div class="form-first">
+                            <input type="text" placeholder="Your name" class="form-control" />
+                            <input type="text" placeholder="Your Email" class="form-control" />
+                        <input type="text" placeholder="Subjetc" class="form-control"/>
+                        <textarea placeholder="Message" rows="5" class="form-control"></textarea>
                 </form>
+                <a href="#" class="buttom-scroll">Send Message</a>
+                    </div>
             </div>
         </div>
+    </div>
     </section>
+
+    <!--
+        ===================== FOOTER ========================================
+    -->
     <footer class="footer">
-        <div>
-            <div>
+        <div class="footer-top">
+            <div class="container-footer">
+                <div class="footer-info">
                 <h3>WAYNE</h3>
                 <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
                     valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
                     proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                </div>
             </div>
             <div>
                 <h6>USEFUL LINKS</h6>

@@ -574,9 +574,13 @@ a {
 
 .footer {
   background: #004a99;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+  display: block;
 }
 .footer h3 {
-  color: white;
+  color: #fff;
   text-align: initial;
   font-size: 36px;
   margin: 0 0 20px 0;
@@ -590,12 +594,86 @@ a {
   margin-bottom: 0;
 }
 
+.footer-top {
+  background: #004a99;
+  padding: 60px 0 30px 0;
+  box-sizing: border-box;
+}
+
+.container-footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 30px;
+}
+
 .clientssec {
   background: #ecf5ff;
   width: 100%;
 }
 .clientssec p {
   padding: 0;
+}
+
+.container-clientes {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clientes-comun {
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+.no-Gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.client-logo {
+  padding: 64px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: white;
+  height: 160px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#clients .client-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale 1.2;
+}
+
+#clients img {
+  transition: all 0.4s ease-in-out;
 }
 
 .button-nav-mobile {
@@ -664,6 +742,89 @@ a {
   list-style: none;
   float: right !important;
   display: none !important;
+}
+
+#contac {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+section {
+  display: block;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  padding-bottom: 30px;
+}
+
+.mapa-container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.map-detalles {
+  margin-bottom: 1.5rem !important;
+}
+
+#contact .info {
+  color: #283d50;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #007bff;
+  float: left;
+  line-height: 1;
+}
+
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-first {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#contact .form-first input {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+input {
+  overflow: visible;
+  cursor: text;
+  text-align: start;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */
