@@ -4,6 +4,7 @@
 body {
     margin     : 0px;
     line-height: 1.5;
+    width      : 100vw;
 }
 
 .section {
@@ -29,12 +30,16 @@ h3 {
 
 p {
     font-family: $fuenteparrafos;
-    font-size: 15px;
-    color: $shuttlegrey;
+    font-size  : 15px;
+    color      : $shuttlegrey;
 
 }
 
 h3 {
     font-size: 36px;
 
+}
+
+div {
+    box-sizing: border-box;
 }

@@ -16,6 +16,7 @@
 body {
   margin: 0px;
   line-height: 1.5;
+  width: 100vw;
 }
 
 .section {
@@ -46,6 +47,10 @@ p {
 
 h3 {
   font-size: 36px;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 #intro {
@@ -109,8 +114,7 @@ h2 {
   background: white;
   padding: 60px 0;
 }
-
-.container {
+#about .container {
   max-width: 540px;
   position: relative;
   padding-right: 15px;
@@ -118,42 +122,34 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
-
-.header {
+#about .header {
   display: block;
 }
-
-h3 {
+#about h3 {
   font-size: 36px;
   color: #283d50;
   text-align: center;
   font-weight: bold;
   position: relative;
 }
-
-p {
-  width: 100%;
+#about p {
   text-align: center;
   margin: 0 0 15px 0;
-  font-size: 25px;
   padding-bottom: 20px;
   color: #556877;
   line-height: 26px;
 }
-
-.container-style {
+#about .container-style {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
-
-.icon-container {
+#about .icon-container {
   background-size: cover;
   padding: 0 0 30px 0;
 }
-
-.icon {
+#about .icon {
   float: left;
   width: 64px;
   height: 64px;
@@ -164,45 +160,38 @@ p {
   border: 2px solid #007bff;
   text-align: center;
 }
-
-.fa {
+#about .fa {
   color: #007bff;
   font-size: 24px;
 }
-
-.title {
+#about .title {
   margin-left: 80px;
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 18px;
   color: #333;
 }
-
-.p-description {
+#about .p-description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
 }
-
-.container-img {
+#about .container-img {
   margin: 20px 0;
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
-
-img {
+#about img {
   vertical-align: middle;
   border-style: none;
 }
-
-.img-extra {
+#about .img-extra {
   max-width: 100%;
   height: auto;
 }
-
-.container-about {
+#about .container-about {
   display: block;
   position: relative;
   width: 100%;
@@ -210,8 +199,7 @@ img {
   padding-left: 15px;
   padding-top: 3rem !important;
 }
-
-#about .container-about h4 {
+#about #about .container-about h4 {
   font-weight: 600;
   font-size: 24px;
 }
@@ -420,7 +408,7 @@ img {
   width: 100%;
   margin-bottom: 30px;
   height: 250px;
-  margin: 10px 4px 0 4px;
+  margin: 10px 0 4px 0px;
 }
 
 .image1 {
@@ -464,61 +452,54 @@ img {
   margin: 0px;
   background: #ecf5ff;
   color: #283d50;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 .sectestimonials p {
   color: #556877;
+  font-size: 1rem;
+  font-style: italic;
+}
+.sectestimonials img {
+  max-width: 100%;
+  height: auto;
 }
 
-.section {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.teamsec h3 {
+.team h3 {
   text-align: center;
   color: #283d50;
   margin: 0 0 20px 0;
   padding: 0;
 }
-
-p {
+.team p {
   text-align: center;
   margin: auto;
   font-size: 15px;
   padding-bottom: 60px;
   color: #556877;
 }
-
-.row-team {
+.team .row-team {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
-
-.member-con {
+.team .member-con {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
-
-.fadeInUp {
+.team .fadeInUp {
   animation-name: fadeInUp;
 }
-
-.member {
+.team .member {
   text-align: center;
   margin-bottom: 20px;
   position: relative;
   border-radius: 50%;
   overflow: hidden;
 }
-
-.member-info {
+.team .member-info {
   box-sizing: border-box;
   opacity: 0;
   display: flex;
@@ -533,14 +514,12 @@ p {
   right: 0;
   transition: 0.2s;
 }
-
-.member-con:hover .member-info {
+.team .member-con:hover .member-info {
   background: rgba(0, 62, 128, 0.7);
   opacity: 1;
   transition: 0.4s;
 }
-
-h4 {
+.team h4 {
   display: block;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
@@ -549,27 +528,27 @@ h4 {
   font-weight: bold;
   color: white;
 }
-
-span {
+.team span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: white;
 }
-
-.member-con:hover .member-info-content {
+.team .member-con:hover .member-info-content {
   margin-top: 0;
   transition: margin 0.4s;
 }
-
-.member-info .social {
+.team .member-info .social {
   margin-top: 15px;
   box-sizing: border-box;
 }
-
-a {
+.team a {
   transition: none;
   color: white;
+}
+.team img {
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -620,19 +599,20 @@ a {
   background: #ecf5ff;
   width: 100%;
 }
+.clientssec h3 {
+  margin: 0;
+}
 .clientssec p {
   padding: 0;
 }
-
-.container-clientes {
+.clientssec .container-clientes {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-
-.clientes-comun {
+.clientssec .clientes-comun {
   border-top: 1px solid #d6eaff;
   border-left: 1px solid #d6eaff;
   margin-bottom: 30px;
@@ -641,13 +621,11 @@ a {
   position: relative;
   width: 100%;
 }
-
-.no-Gutters {
+.clientssec .no-Gutters {
   margin-right: 0;
   margin-left: 0;
 }
-
-.client-logo {
+.clientssec .client-logo {
   padding: 64px;
   display: flex;
   -webkit-box-pack: center;
@@ -659,20 +637,17 @@ a {
   background: white;
   height: 160px;
 }
-
-img {
+.clientssec img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   border-style: none;
 }
-
-#clients .client-logo:hover img {
+.clientssec #clients .client-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale 1.2;
 }
-
-#clients img {
+.clientssec #clients img {
   transition: all 0.4s ease-in-out;
 }
 
@@ -747,73 +722,60 @@ a {
 #contac {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
-  overflow: hidden;
 }
-
-section {
+#contac section {
   display: block;
   box-sizing: border-box;
 }
-
-.container-fluid {
+#contac .container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-
-.header {
+#contac .header {
   padding-bottom: 30px;
 }
-
-.mapa-container {
+#contac .mapa-container {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
-
-.map-detalles {
+#contac .map-detalles {
   margin-bottom: 1.5rem !important;
 }
-
-#contact .info {
+#contac #contact .info {
   color: #283d50;
 }
-
-#contact .info i {
+#contac #contact .info i {
   font-size: 32px;
   color: #007bff;
   float: left;
   line-height: 1;
 }
-
-.container-form {
+#contac .container-form {
   display: flex;
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
 }
-
-.form-first {
+#contac .form-first {
   padding-right: 5px;
   padding-left: 5px;
 }
-
-#contact .form-first input {
+#contac #contact .form-first input {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
-
-input {
+#contac input {
   overflow: visible;
   cursor: text;
   text-align: start;
 }
-
-.form-control {
+#contac .form-control {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
@@ -825,6 +787,11 @@ input {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#contac textarea {
+  height: auto;
+  overflow: auto;
+  resize: vertical;
 }
 
 /*# sourceMappingURL=main.css.map */

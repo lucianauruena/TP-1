@@ -3,8 +3,16 @@
     margin    : 0px;
     background: $aliceblue;
     color     : $nileblue;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 
     p {
-        color: $shuttlegrey
+        color     : $shuttlegrey;
+        font-size : 1rem;
+        font-style: italic;
+    }
+
+    img {
+        max-width: 100%;
+        height   : auto;
     }
 }
