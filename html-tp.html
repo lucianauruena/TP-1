@@ -12,17 +12,16 @@
 </head>
 
 <body>
-    <button type="button" class="button-nav-mobile">
-        <i class="fa fa-bars"></i>
-    </button>
+
     <header id="header" class="nav-top">
-        <div class="container">
-            <div class="logo float-left">
-                <a href="#intro" class="scroll">
-                    <img src="img/logo-tp.png" alt class="img-logo">
-                </a>
-            </div>
+        <div class="logo">
+            <a href="#intro" class="img-logo">
+                <img src="img/logo-tp.png" alt class="card">
+            </a>
         </div>
+        <button type="button" class="button-nav-mobile">
+            <i class="fa fa-bars"></i>
+        </button>
         <nav class="main-nav">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -52,19 +51,21 @@
         </nav>
     </header>
     <section id="intro">
-        <div class="container1">
-            <img src="img/intro-img.svg" class="img-intro">
+        <div class="container">
+            <div class="img-container">
+                <img src="img/intro-img.svg" class="img-intro">
+            </div>
             <div class="info-intro">
-                <h2>"We provide
+                <h2>We provide
                     <br>
                     <span class="solutions">solutions</span>
                     <br>
-                    "for your business!"
+                    for your business!
                 </h2>
-                <div>
-                    <a href="#about" class="buttom-scroll">Get started</a>
+                <div class="hero-button">
+                    <a href="#about" class="button-scroll">Get started</a>
                     <!--agregar a href-->
-                    <a href="#about" class="buttom-scroll">Our services</a>
+                    <a href="#services" class="button-scroll">Our services</a>
                     <!--idem a href-->
                 </div>
             </div>
@@ -79,7 +80,8 @@
             <!--header-->
             <header class="header">
                 <h3>About us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
                     et
                     dolore magna aliqua.</p>
                 <div class="container-img"><img src="img/about-img.svg" class="img-extra"></div>
@@ -87,59 +89,82 @@
 
             <!--primer mini container-->
             <div class="container-style">
-                <span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat.</p>
-                </span>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea commodo consequat.</p>
+
+
                 <div class="icon-container">
                     <div class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
-                    <h4 class="title">Eiusmod Tempor</h4>
-                    <p class="p-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                        tempore, cum soluta nobis
-                        est
-                        eligendi</p>
-                    <div class="icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
-                    <h4 class="title">Magni Dolores</h4>
-                    <p class="p-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id
-                        est
-                        laborum</p>
-                    <div class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
-                    <h4 class="title">Dolor Sitema</h4>
-                    <p class="p-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat
-                        tarad
-                        limino ata</p>
+                    <div class="info">
+                        <h4 class="title">Eiusmod Tempor</h4>
+                        <p class="p-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                            tempore, cum soluta nobis
+                            est
+                            eligendi</p>
+                    </div>
                 </div>
-                <!--segundo mini container-->
-                <div class="container-about">
+                <div class="icon-container">
+                    <div class="icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h4 class="title">Magni Dolores</h4>
+                        <p class="p-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia
+                            deserunt mollit anim id
+                            est
+                            laborum</p>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h4 class="title">Dolor Sitema</h4>
+                        <p class="p-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex
+                            ea commodo consequat
+                            tarad
+                            limino ata</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--segundo mini container-->
+            <div class="more-info">
+                <div class="more-info-container">
                     <div class="container-img"><img src="img/about-extra-1.svg" class="img-extra"></div>
-                    <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
-                    <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
-                        perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
-                        recusandae non ad at et a.</p>
-                    <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis
-                        deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro
-                        rerum eum eum.</p>
+                    <div class="description">
+                        <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
+                            perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
+                            recusandae non ad at et a.</p>
+                        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
+                            corporis
+                            deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit.
+                            Porro
+                            rerum eum eum.</p>
+                    </div>
                 </div>
                 <!--tercer mini container-->
-                <div class="container-about">
+                <div class="more-info-container extra2">
                     <div class="container-img"><img src="img/about-extra-2.svg" class="img-extra"></div>
-                    <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-                    <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis.
-                        Voluptas
-                        nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at
-                        blanditiis beatae incidunt sunt.</p>
-                    <br>
-                    <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse
-                        molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.</p>
-
-                    <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut
-                        fuga
-                        mollitia exercitationem nam accusantium provident quia.</p>
+                    <div class="description">
+                        <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
+                        </h4>
+                        <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis.
+                            Voluptas
+                            nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis
+                            autem at
+                            blanditiis beatae incidunt sunt.</p>
+                        <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse
+                            molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+                        </p>
+                        <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut
+                            fuga
+                            mollitia exercitationem nam accusantium provident quia.</p>
+                    </div>
                 </div>
             </div>
     </section>
@@ -271,107 +296,134 @@
         ================================ SECTION PORTFOLIO ==========================================
     -->
     <section class="section portfolio">
-        <div class="container4">
+        <div class="container">
             <header class="header">
                 <h3>Our Portfolio</h3>
             </header>
-            <div class="menuport">
-                <ul>
-                    <li class="menudetails ">ALL</li>
-                    <li class="menudetails ">APP</li>
-                    <li class="menudetails ">CARD</li>
-                    <li class="menudetails ">WEB</li>
+            <div class="menu-port">
+                <ul class="menu-list">
+                    <li class="menu-details activo">ALL</li>
+                    <li class="menu-details ">APP</li>
+                    <li class="menu-details ">CARD</li>
+                    <li class="menu-details ">WEB</li>
                 </ul>
             </div>
-            <div>
-                <div class="image1 imgprop">
-                    <div>
-                        <p>App 1</p>
-                        <p>APP</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
-                    </div>
-                </div>
-                <div class="image2 imgprop">
-                    <div>
-                        <p>Web 3</p>
-                        <p>WEB</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
+            <div class="portfolio-container">
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/app1.jpg" alt="">
+                        <div>
+                            <p>App 1</p>
+                            <p>APP</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
                     </div>
                 </div>
-                <div class="image3 imgprop">
-                    <div>
-                        <p>App 2</p>
-                        <p>APP</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
-                    </div>
-                </div>
-                <div class="image4 imgprop">
-                    <div>
-                        <p>Card 2</p>
-                        <p>CARD</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/web3.jpg" alt="">
+                        <div>
+                            <p>Web 3</p>
+                            <p>WEB</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
                     </div>
                 </div>
-                <div class="image5 imgprop">
-                    <div>
-                        <p>Web 2</p>
-                        <p>WEB</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
-                    </div>
-                </div>
-                <div class="image6 imgprop">
-                    <div>
-                        <p>Web 3</p>
-                        <p>WEB</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/app2.jpg" alt="">
+                        <div>
+                            <p>App 2</p>
+                            <p>APP</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
                     </div>
                 </div>
-                <div class="image7 imgprop">
-                    <div>
-                        <p>Card 1</p>
-                        <p>CARD</p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
-                    </div>
-                </div>
-                <div class="image8 imgprop">
-                    <div>
-                        <p>Card 3</p>
-                        <p>CARD </p>
-                    </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/card2.jpg" alt="">
+                        <div>
+                            <p>Card 2</p>
+                            <p>CARD</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
                     </div>
                 </div>
-                <div class="image9 imgprop">
-                    <div>
-                        <p>Web 1</p>
-                        <p>WEB</p>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/web2.jpg" alt="">
+                        <div>
+                            <p>Web 2</p>
+                            <p>WEB</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
                     </div>
-                    <div>
-                        <span><i class="fa fa-eye"></i></span>
-                        <span><i class="fa fa-external-link-alt"></i></span>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/app3.jpg" alt="">
+                        <div>
+                            <p>Web 3</p>
+                            <p>WEB</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/card1.jpg" alt="">
+                        <div>
+                            <p>Card 1</p>
+                            <p>CARD</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/card2.jpg" alt="">
+                        <div>
+                            <p>Card 3</p>
+                            <p>CARD </p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <img src="./img/portfolio/web3.jpg" alt="">
+                        <div>
+                            <p>Web 1</p>
+                            <p>WEB</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-eye"></i></span>
+                            <span><i class="fa fa-external-link-alt"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -588,7 +640,7 @@
                                 <input type="text" placeholder="Subjetc" class="form-control" />
                                 <textarea placeholder="Message" rows="5" class="form-control"></textarea>
                     </form>
-                    <a href="#" class="buttom-scroll">Send Message</a>
+                    <a href="#" class="button-scroll">Send Message</a>
                 </div>
             </div>
         </div>

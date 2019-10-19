@@ -1,0 +1,68 @@
+#intro {
+    padding         : 100px 0 20px 0;
+    position        : relative;
+    background-color: $persianblue;
+    background-size : cover;
+
+    .solutions {
+        text-decoration: underline;
+        color          : $mayablue;
+
+    }
+
+    .img-container {
+        margin: 0 auto 25px auto;
+        width: 80%;
+    }
+
+    .img-intro {
+        float    : none;
+        margin   : 0 auto 25px auto;
+        display  : flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height   : auto;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style  : none;
+    }
+
+    .info-intro {
+        color     : $white;
+        text-align: center;
+        float     : none;
+        margin    : auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size    : 34px;
+        margin-bottom: 30px;
+        font-weight  : 800;
+    }
+
+    .button-scroll {
+        background   : $dodgerblue;
+        border       : 2px solid $dodgerblue;
+        color        : $white;
+        font-family  : $fuentetitulo;
+        font-size    : 14px;
+        font-weight  : 600;
+        display      : inline-block;
+        padding      : 10px 32px;
+        border-radius: 50px;
+        transition   : 0.5s;
+        margin       : 0 0 20px 0;
+    }
+
+    .hero-button {
+        display       : flex;
+        align-items   : center;
+        flex-direction: column;
+        ;
+
+    }
+
+}

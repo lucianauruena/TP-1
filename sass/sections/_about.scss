@@ -24,55 +24,67 @@
     }
 
     p {
-        text-align    : center;
-        margin        : 0 0 15px 0;
-        padding-bottom: 20px;
-        color         : $shuttlegrey;
-        line-height   : 26px;
+        margin: 0;
+    }
 
+    .header-description {
+        text-align    : center;
+        padding-bottom: 60px;
+
+    }
+
+    .description {
+        font-size  : 16px;
+        margin     : 0 0 30px 0;
+        line-height: 26px;
     }
 
     .container-style {
-        display     : flex;
-        flex-wrap   : wrap;
-        margin-right: -15px;
-        margin-left : -15px;
+        display  : flex;
+        flex-wrap: wrap;
     }
 
     .icon-container {
-        background-size: cover;
-        padding        : 0 0 30px 0;
+        padding: 0 0 30px 0;
     }
 
     .icon {
-        float          : left;
-        width          : 64px;
-        height         : 64px;
+        width        : 64px;
+        height       : 64px;
+        display      : flex;
+        border-radius: 50%;
+        border       : 2px solid #007bff;
+        align-items  : center;
+    }
+
+    .icon-container {
+        padding        : 0 0 30px 0;
         display        : flex;
-        justify-content: center;
-        flex-direction : column;
-        border-radius  : 50%;
-        border         : 2px solid $dodgerblue;
-        text-align     : center;
+        flex-direction : row;
+        justify-content: flex-start;
     }
 
     .fa {
-        color    : $dodgerblue;
-        font-size: 24px;
+        color     : $dodgerblue;
+        font-size : 24px;
+        width     : 64px;
+        text-align: center;
     }
 
     .title {
-        margin-left  : 80px;
-        font-weight  : 600;
-        margin-bottom: 5px;
-        font-size    : 18px;
-        color        : #333;
+        font-weight: 600;
+        margin     : 0 0 5px;
+        font-size  : 18px;
+        color      : #333;
     }
 
     .p-description {
-        margin-left: 80px;
         line-height: 24px;
         font-size  : 14px;
+    }
+
+    .info {
+        margin-left: 15px;
     }
 
     .container-img {
@@ -93,13 +105,26 @@
         height   : auto;
     }
 
-    .container-about {
-        display      : block;
-        position     : relative;
-        width        : 100%;
-        padding-right: 15px;
-        padding-left : 15px;
-        padding-top  : 3rem !important;
+    .more-info-container {
+        .description {
+            padding: 32px 0 0;
+
+            h4 {
+                font-weight: 600;
+                font-size  : 24px;
+                margin     : 0 0 20px 0;
+
+            }
+
+            p {
+                padding: 0;
+                margin : 0 0 30px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .extra2{
+        padding-top: 6px;
     }
 
     #about .container-about h4 {
