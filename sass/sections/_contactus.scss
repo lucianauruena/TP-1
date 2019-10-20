@@ -4,24 +4,30 @@
 
 
     p {
-        padding      : 0 0 10px 36px;
-        font-size    : 13px;
-        line-height  : 24px;
-        margin-bottom: 0;
-        font-family  : $fuenteparrafos;
-        color        : $aliceblue;
+        font-size  : 14px;
+        line-height: 24px;
+        font-family: $fuenteparrafos;
+        color      : $nileblue;
+        margin     : 0 0 36px;
 
+    }
+
+    .contact-info {
+        margin: 30px 0 0;
     }
 
     .info {
-        box-sizing: border-box;
-
+        box-sizing : border-box;
+        display    : flex;
     }
 
     .icon-contact {
-        font-size  : 32px;
-        color      : $dodgerblue;
-        line-height: 1;
+        font-size      : 24px;
+        color          : $dodgerblue;
+        line-height    : 1;
+        width          : 40px;
+        height         : 40px;
+        display        : flex;
     }
 
     section {

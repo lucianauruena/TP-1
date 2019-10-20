@@ -6,7 +6,7 @@
 /* azul palido de secciones y fondo de los botones de Our Portfolio*/
 /* colores del Form*/
 /* colores de letras */
-/* color de SOLUTIONS en el hero */
+/* color de SOLUTIONS en el hero y Focus del primer formulario */
 /* color de los titulos */
 /*color de los parrafos */
 /* lineas de texto claras */
@@ -42,6 +42,7 @@ h3 {
   text-align: center;
   color: #283d50;
   margin: 0px 0px 20px 0px;
+  font-size: 36px;
 }
 
 p {
@@ -49,10 +50,6 @@ p {
   font-size: 15px;
   color: #556877;
   line-height: 1.5;
-}
-
-h3 {
-  font-size: 36px;
 }
 
 div {
@@ -105,7 +102,12 @@ div {
   margin-bottom: 30px;
   font-weight: 800;
 }
-#intro .button-scroll {
+#intro .hero-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#intro .hero-button a {
   background: #007bff;
   border: 2px solid #007bff;
   color: white;
@@ -117,11 +119,7 @@ div {
   border-radius: 50px;
   transition: 0.5s;
   margin: 0 0 20px 0;
-}
-#intro .hero-button {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-decoration: none;
 }
 
 #about {
@@ -430,7 +428,7 @@ div {
 .portfolio .activo,
 .portfolio .menu-details:hover {
   background: #007bff;
-  color: #fff;
+  color: white;
 }
 .portfolio .card {
   position: relative;
@@ -447,6 +445,7 @@ div {
   border-radius: 6px;
   margin: 0;
   height: 100%;
+  background-color: #003166;
 }
 .portfolio .card img {
   max-width: 100%;
@@ -454,6 +453,57 @@ div {
   width: 100%;
   object-fit: cover;
   box-sizing: border-box;
+}
+.portfolio .card .info-container {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+.portfolio .card .info-container h4 {
+  color: white;
+  font-size: 22px;
+  line-height: 1px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  padding-bottom: 0;
+}
+.portfolio .card .info-container p {
+  color: #ecf5ff;
+  font-size: 14px;
+}
+.portfolio .card .info-container .title {
+  text-align: center;
+}
+.portfolio .card .networks {
+  display: flex;
+}
+.portfolio .card .networks span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #007bff;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+.portfolio .card .card-container:hover .info-container {
+  opacity: 1;
+}
+.portfolio .card .card-container:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
 }
 .portfolio .imgprop {
   background-size: cover;
@@ -466,6 +516,7 @@ div {
   background: #ecf5ff;
   color: #283d50;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
 }
 .sectestimonials .tittle-test {
   margin-bottom: 40px;
@@ -489,11 +540,82 @@ div {
   margin: 0 0 15px 0;
   box-sizing: border-box;
 }
+.sectestimonials .container {
+  padding: 0;
+}
 .sectestimonials .container img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
   width: 120px;
+}
+
+/* Carrusel */
+.carrusel {
+  display: block;
+  position: relative;
+  height: 354px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  /* para desplazar las cards */
+  /* para pintar el boton activo */
+}
+.carrusel .cards {
+  display: flex;
+  width: 500%;
+}
+.carrusel .radio-button:nth-of-type(1):checked ~ .cards {
+  transform: translate3d(0%, 0px, 0px);
+  transition: all 0.25s ease 0s;
+}
+.carrusel .radio-button:nth-of-type(2):checked ~ .cards {
+  transform: translate3d(-20%, 0px, 0px);
+  transition: all 0.25s ease 0s;
+}
+.carrusel .radio-button:nth-of-type(3):checked ~ .cards {
+  transform: translate3d(-40%, 0px, 0px);
+  transition: all 0.25s ease 0s;
+}
+.carrusel .radio-button:nth-of-type(4):checked ~ .cards {
+  transform: translate3d(-60%, 0px, 0px);
+  transition: all 0.25s ease 0s;
+}
+.carrusel .radio-button:nth-of-type(5):checked ~ .cards {
+  transform: translate3d(-80%, 0px, 0px);
+  transition: all 0.25s ease 0s;
+}
+.carrusel .radio-button:nth-of-type(1):checked ~ .buttons label:nth-of-type(1),
+.carrusel .radio-button:nth-of-type(2):checked ~ .buttons label:nth-of-type(2),
+.carrusel .radio-button:nth-of-type(3):checked ~ .buttons label:nth-of-type(3),
+.carrusel .radio-button:nth-of-type(4):checked ~ .buttons label:nth-of-type(4),
+.carrusel .radio-button:nth-of-type(5):checked ~ .buttons label:nth-of-type(5) {
+  background-color: #007bff;
+}
+.carrusel input[type=radio] {
+  display: none;
+}
+.carrusel li {
+  list-style: none;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+}
+.carrusel .buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  text-align: center;
+}
+.carrusel .buttons label {
+  background-color: #ddd;
+  padding: 6px;
+  margin: 0 3px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .team h3 {
@@ -603,6 +725,7 @@ div {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .footer h6 {
   font-size: 14px;
@@ -684,12 +807,18 @@ div {
 .clientssec {
   background: #ecf5ff;
   width: 100%;
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 .clientssec h3 {
   margin: 0;
 }
 .clientssec p {
   padding: 0;
+  text-align: center;
+}
+.clientssec .header {
+  padding-bottom: 60px;
 }
 .clientssec .container-clientes {
   width: 100%;
@@ -807,20 +936,26 @@ div {
   padding: 60px 0;
 }
 #contact p {
-  padding: 0 0 10px 36px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
-  margin-bottom: 0;
   font-family: "Open Sans", sans-serif;
-  color: #ecf5ff;
+  color: #283d50;
+  margin: 0 0 36px;
+}
+#contact .contact-info {
+  margin: 30px 0 0;
 }
 #contact .info {
   box-sizing: border-box;
+  display: flex;
 }
 #contact .icon-contact {
-  font-size: 32px;
+  font-size: 24px;
   color: #007bff;
   line-height: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
 }
 #contact section {
   display: block;
@@ -865,8 +1000,8 @@ div {
 #contact form {
   text-align: center;
 }
-#contact .button-scroll {
-  background: #0067d5;
+#contact .submit {
+  background: #007bff;
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
@@ -874,6 +1009,7 @@ div {
   transition: 0.3s;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
+  display: inline-block;
 }
 #contact input,
 #contact textarea {
@@ -883,7 +1019,6 @@ div {
 }
 #contact .form-first {
   width: 100%;
-  padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -892,15 +1027,23 @@ div {
 #contact .form-control {
   display: block;
   width: 100%;
-  height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   font-weight: 400;
+  height: 38px;
   line-height: 1.5;
   color: #495057;
   background-color: white;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+#contact .form-control:focus {
+  border-color: #74b5fc;
+  outline: 0;
+}
+#contact .form-textarea {
+  height: 120px;
 }
 
 .footer form {
