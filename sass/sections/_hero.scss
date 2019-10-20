@@ -4,6 +4,11 @@
     background-color: $persianblue;
     background-size : cover;
 
+    @include web {
+        padding: 200px 0 120px 0;
+
+    }
+
     .solutions {
         text-decoration: underline;
         color          : $mayablue;
@@ -13,10 +18,17 @@
     .img-container {
         margin: 0 auto 25px auto;
         width : 80%;
+
+        @include web {
+            width: 50%;
+            margin: 0;
+            img{
+                margin: 0;
+            }
+        }
     }
 
     .img-intro {
-        float    : none;
         margin   : 0 auto 25px auto;
         display  : flex;
         flex-wrap: wrap;
@@ -32,21 +44,34 @@
     .info-intro {
         color     : $white;
         text-align: center;
-        float     : none;
         margin    : auto;
         text-align: center;
+        @include web {
+            margin: 0;
+        }
     }
 
     h2 {
         font-size    : 34px;
         margin-bottom: 30px;
         font-weight  : 800;
+
+        @include web {
+            margin-bottom: 40px;
+            font-size    : 48px;
+            font-weight  : 700;
+            text-align   : left;
+            margin-top: 0;
+        }
     }
 
     .hero-button {
         display       : flex;
         align-items   : center;
         flex-direction: column;
+        @include web {flex-direction: row;
+
+        }
 
         a {
             background     : $dodgerblue;
@@ -61,6 +86,17 @@
             transition     : 0.5s;
             margin         : 0 0 20px 0;
             text-decoration: none;
+            @include web {margin: 0 20px 20px 0; 
+
+            }
+        }
+    }
+
+    .container {
+        @include web {
+            display       : flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
         }
     }
 

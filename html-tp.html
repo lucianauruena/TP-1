@@ -15,41 +15,43 @@
 <body>
 
     <header id="header" class="nav-top">
-        <div class="logo">
-            <a href="#intro" class="img-logo">
-                <img src="img/logo-tp.png" alt class="card">
-            </a>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#intro" class="img-logo">
+                    <img src="img/logo-tp.png" alt class="card">
+                </a>
+            </div>
+            <button type="button" class="button-nav-mobile">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li class="dropdown-submenu"><span>Drop Down <i class="fas fa-chevron-down chevron"></i></span>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown-submenu2"><span>Drop Down 2 <i class="fas fa-chevron-right chevron"></i></span>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <button type="button" class="button-nav-mobile">
-            <i class="fa fa-bars"></i>
-        </button>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Team</a></li>
-                <li>Drop Down
-                    <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li>Drop Down 2
-                            <ul>
-                                <li><a href="#">Deep Drop Down 1</a></li>
-                                <li><a href="#">Deep Drop Down 2</a></li>
-                                <li><a href="#">Deep Drop Down 3</a></li>
-                                <li><a href="#">Deep Drop Down 4</a></li>
-                                <li><a href="#">Deep Drop Down 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Drop Down 3</a></li>
-                        <li><a href="#">Drop Down 4</a></li>
-                        <li><a href="#">Drop Down 5</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
     <section id="intro">
         <div class="container">
@@ -85,89 +87,104 @@
                     tempor incididunt ut labore
                     et
                     dolore magna aliqua.</p>
-                <div class="container-img"><img src="img/about-img.svg" class="img-extra"></div>
+
             </header>
 
             <!--primer mini container-->
-            <div class="container-style">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut
-                    aliquip ex ea commodo consequat.</p>
+            <div class="desk-container1">
+                <div class="container-img"><img src="img/about-img.svg" class="img-extra"></div>
+                <div class="container-style">
+
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p>
 
 
-                <div class="icon-container">
-                    <div class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
-                    <div class="info">
-                        <h4 class="title">Eiusmod Tempor</h4>
-                        <p class="p-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                            tempore, cum soluta nobis
-                            est
-                            eligendi</p>
+                    <div class="icon-container">
+                        <div class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
+                        <div class="info">
+                            <h4 class="title">Eiusmod Tempor</h4>
+                            <p class="p-description">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                                libero
+                                tempore, cum soluta nobis
+                                est
+                                eligendi</p>
+                        </div>
                     </div>
-                </div>
-                <div class="icon-container">
-                    <div class="icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
-                    <div class="info">
-                        <h4 class="title">Magni Dolores</h4>
-                        <p class="p-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia
-                            deserunt mollit anim id
-                            est
-                            laborum</p>
+                    <div class="icon-container">
+                        <div class="icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                        <div class="info">
+                            <h4 class="title">Magni Dolores</h4>
+                            <p class="p-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id
+                                est
+                                laborum</p>
+                        </div>
                     </div>
-                </div>
-                <div class="icon-container">
-                    <div class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
-                    <div class="info">
-                        <h4 class="title">Dolor Sitema</h4>
-                        <p class="p-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex
-                            ea commodo consequat
-                            tarad
-                            limino ata</p>
+                    <div class="icon-container">
+                        <div class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+                        <div class="info">
+                            <h4 class="title">Dolor Sitema</h4>
+                            <p class="p-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip
+                                ex
+                                ea commodo consequat
+                                tarad
+                                limino ata</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
             <!--segundo mini container-->
-            <div class="more-info">
-                <div class="more-info-container">
-                    <div class="container-img"><img src="img/about-extra-1.svg" class="img-extra"></div>
-                    <div class="description">
-                        <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
-                        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
-                            perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
-                            recusandae non ad at et a.</p>
-                        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
-                            corporis
-                            deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit.
-                            Porro
-                            rerum eum eum.</p>
-                    </div>
-                </div>
-                <!--tercer mini container-->
-                <div class="more-info-container extra2">
-                    <div class="container-img"><img src="img/about-extra-2.svg" class="img-extra"></div>
-                    <div class="description">
-                        <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
-                        </h4>
-                        <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis.
-                            Voluptas
-                            nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis
-                            autem at
-                            blanditiis beatae incidunt sunt.</p>
-                        <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse
-                            molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-                        </p>
-                        <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut
-                            fuga
-                            mollitia exercitationem nam accusantium provident quia.</p>
-                    </div>
+            <div class="desk-container2">
+                <div class="container-img"><img src="img/about-extra-1.svg" class="img-extra"></div>
+                <div class="description">
+                    <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                    <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas
+                        molestiae
+                        perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam
+                        mollitia
+                        recusandae non ad at et a.</p>
+                    <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
+                        corporis
+                        deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia
+                        sit.
+                        Porro
+                        rerum eum eum.</p>
                 </div>
             </div>
+            <!--tercer mini container-->
+            <div class="desk-container3 extra2">
+                <div class="container-img"><img src="img/about-extra-2.svg" class="img-extra"></div>
+                <div class="description">
+                    <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere
+                        reprehenderit.
+                    </h4>
+                    <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea
+                        quis.
+                        Voluptas
+                        nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis
+                        autem at
+                        blanditiis beatae incidunt sunt.</p>
+                    <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui
+                        esse
+                        molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis
+                        iusto.
+                    </p>
+                    <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est
+                        aut
+                        fuga
+                        mollitia exercitationem nam accusantium provident quia.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!--fin primer container-->
     <!--segundo container-->
@@ -183,7 +200,7 @@
                     abhorreant
                     vituperatoribus.</p>
             </header>
-            <div>
+            <div class="box-container">
                 <div class="box">
                     <div class="icon1"><i class="fa fa-bullseye" aria-hidden="true"></i></div>
                     <div class="info-serv">
