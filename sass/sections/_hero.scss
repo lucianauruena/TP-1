@@ -12,7 +12,7 @@
 
     .img-container {
         margin: 0 auto 25px auto;
-        width: 80%;
+        width : 80%;
     }
 
     .img-intro {
@@ -43,26 +43,25 @@
         font-weight  : 800;
     }
 
-    .button-scroll {
-        background   : $dodgerblue;
-        border       : 2px solid $dodgerblue;
-        color        : $white;
-        font-family  : $fuentetitulo;
-        font-size    : 14px;
-        font-weight  : 600;
-        display      : inline-block;
-        padding      : 10px 32px;
-        border-radius: 50px;
-        transition   : 0.5s;
-        margin       : 0 0 20px 0;
-    }
-
     .hero-button {
         display       : flex;
         align-items   : center;
         flex-direction: column;
-        ;
 
+        a {
+            background     : $dodgerblue;
+            border         : 2px solid $dodgerblue;
+            color          : $white;
+            font-family    : $fuentetitulo;
+            font-size      : 14px;
+            font-weight    : 600;
+            display        : inline-block;
+            padding        : 10px 32px;
+            border-radius  : 50px;
+            transition     : 0.5s;
+            margin         : 0 0 20px 0;
+            text-decoration: none;
+        }
     }
 
 }

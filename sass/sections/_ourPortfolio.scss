@@ -44,8 +44,8 @@
 
     .activo,
     .menu-details:hover {
-        background: #007bff;
-        color     : #fff;
+        background: $dodgerblue;
+        color     : $white;
     }
 
     .card {
@@ -58,11 +58,12 @@
         padding-left : 15px;
 
         .card-container {
-            overflow     : hidden;
-            position     : relative;
-            border-radius: 6px;
-            margin       : 0;
-            height       : 100%;
+            overflow        : hidden;
+            position        : relative;
+            border-radius   : 6px;
+            margin          : 0;
+            height          : 100%;
+            background-color: $prussianblue;
         }
 
         img {
@@ -72,6 +73,65 @@
             object-fit: cover;
             box-sizing: border-box;
         }
+
+        .info-container {
+            position       : absolute;
+            z-index        : 10;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            flex-direction : column;
+            top            : 0;
+            right          : 0;
+            bottom         : 0;
+            left           : 0;
+            opacity        : 0;
+            transition     : 0.2s linear;
+
+            h4 {
+                color         : $white;
+                font-size     : 22px;
+                line-height   : 1px;
+                font-weight   : 700;
+                margin        : 0 0 14px;
+                padding-bottom: 0;
+            }
+
+            p {
+                color    : $aliceblue;
+                font-size: 14px;
+            }
+
+            .title {
+                text-align: center;
+            }
+        }
+
+        .networks {
+            display: flex;
+
+            span {
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                line-height    : 1;
+                text-align     : center;
+                width          : 36px;
+                height         : 36px;
+                background     : $dodgerblue;
+                border-radius  : 50%;
+                margin         : 0 8px;
+            }
+        }
+
+        .card-container:hover .info-container {
+            opacity: 1;
+        }
+
+        .card-container:hover img {
+            opacity   : 0.4;
+            transition: 0.3s;
+        }
     }
 
     .imgprop {
@@ -79,4 +139,4 @@
         width          : 100%;
     }
 
-} 
+}

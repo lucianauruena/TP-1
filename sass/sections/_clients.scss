@@ -1,16 +1,20 @@
 .clientssec {
     background: $aliceblue;
     width     : 100%;
-
+    padding   : 60px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     h3 {
         margin: 0;
     }
 
     p {
-        padding: 0;
-
+        padding   : 0;
+        text-align: center;
     }
 
+    .header {
+        padding-bottom: 60px;
+    }
 
     .container-clientes {
         width        : 100%;
