@@ -236,8 +236,21 @@ div {
   background: #ecf5ff;
   display: block;
 }
-
-.container2 {
+#services .info-services {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+#services h4 {
+  margin: 0 0 0 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+#services .container2 {
   max-width: 540px;
   position: relative;
   padding-left: 15px;
@@ -245,84 +258,54 @@ div {
   margin-right: auto;
   margin-left: auto;
 }
-
-.box {
+#services .box {
   padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  background: white;
+  position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin-top: 0px;
-  margin-right: 10px;
-  margin-bottom: 40px;
-  margin-left: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  height: auto;
 }
-
-.icon1 {
+#services i {
   position: absolute;
-  left: 52px;
-  top: 48px;
+  font-size: 64px;
+  left: -10px;
+  top: calc(50% - 32px);
+  box-sizing: border-box;
 }
-
-.icon1 .fa {
-  font-size: 50px;
+#services .info-serv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+}
+#services .p-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0 0 0 40px;
+}
+#services .icon1 {
   color: #ff689b;
 }
-
-.icon2 {
-  position: absolute;
-  left: 52px;
-  top: 330px;
-}
-
-.icon2 .fa {
-  font-size: 50px;
+#services .icon2 {
   color: #e9bf06;
 }
-
-.icon3 {
-  position: absolute;
-  left: 52px;
-  top: 611px;
-}
-
-.icon3 .fa {
-  font-size: 50px;
+#services .icon3 {
   color: #3fcdc7;
 }
-
-.icon4 {
-  position: absolute;
-  left: 52px;
-  top: 872px;
-}
-
-.icon4 .fa {
-  font-size: 50px;
+#services .icon4 {
   color: #41cf2e;
 }
-
-.icon5 {
-  position: absolute;
-  left: 52px;
-  top: 1152px;
-}
-
-.icon5 .fa {
-  font-size: 50px;
+#services .icon5 {
   color: #d6ff22;
 }
-
-.icon6 {
-  position: absolute;
-  left: 52px;
-  top: 1431px;
-}
-
-.icon6 .fa {
-  font-size: 50px;
+#services .icon6 {
   color: #4680ff;
 }
 
