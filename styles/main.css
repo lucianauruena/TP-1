@@ -389,47 +389,6 @@ div {
 
 .portfolio {
   padding: 60px 0;
-  /* .image1 {
-      background-image: url(../img/portfolio/app1.jpg);
-  }
-
-  .image2 {
-      background-image: url(../img/portfolio/web3.jpg);
-
-  }
-
-  .image3 {
-      background-image: url(../img/portfolio/app2.jpg);
-
-  }
-
-  .image4 {
-      background-image: url(../img/portfolio/card2.jpg);
-
-  }
-
-  .image5 {
-      background-image: url(../img/portfolio/web2.jpg);
-
-  }
-
-  .image6 {
-      background-image: url(../img/portfolio/app3.jpg);
-
-  }
-
-  .image7 {
-      background-image: url(../img/portfolio/card1.jpg);
-  }
-
-  .image8 {
-      background-image: url(../img/portfolio/card2.jpg);
-
-  }
-
-  .image9 {
-      background-image: url(../img/portfolio/web3.jpg);
-  } */
 }
 .portfolio .container {
   padding: 0px;
@@ -504,14 +463,33 @@ div {
   color: #283d50;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
+.sectestimonials .tittle-test {
+  margin-bottom: 40px;
+}
+.sectestimonials .container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+.sectestimonials .container h4 {
+  color: #999;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  padding: 0;
+}
 .sectestimonials p {
   color: #556877;
-  font-size: 1rem;
   font-style: italic;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  box-sizing: border-box;
 }
-.sectestimonials img {
+.sectestimonials .container img {
   max-width: 100%;
   height: auto;
+  border-radius: 50%;
+  width: 120px;
 }
 
 .team h3 {
@@ -704,7 +682,6 @@ div {
 #header {
   display: block;
   height: 60px;
-  padding: 10px;
   background: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   position: fixed;
@@ -714,6 +691,7 @@ div {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  padding: 10px 15px;
 }
 #header .button-nav-mobile {
   right: 0;
@@ -724,6 +702,8 @@ div {
   outline: none !important;
   line-height: 1;
   cursor: pointer;
+  margin-right: 18px;
+  color: #00458F;
 }
 #header .button {
   overflow: visible;
@@ -782,14 +762,9 @@ div {
 #contac .header {
   padding-bottom: 30px;
 }
-#contac .mapa-container {
-  position: relative;
+#contac .map-details {
+  border: 0;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-#contac .map-detalles {
-  margin-bottom: 1.5rem !important;
 }
 #contac #contact .info {
   color: #283d50;
