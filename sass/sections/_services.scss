@@ -7,10 +7,12 @@
     .info-services {
         text-align: center;
         font-size : 15px;
+        padding-bottom: 60px;
+        margin: 0;
     }
 
     h4 {
-        margin-left  : 40px;
+        margin: 0 0 0 40px;
         font-weight  : 700;
         margin-bottom: 15px;
         font-size    : 18px;
@@ -37,7 +39,6 @@
         box-shadow   : 0 10px 29px 0 rgba(68, 88, 144, 0.1);
         transition   : all 0.3s ease-in-out;
         box-sizing   : border-box;
-        width        : 100%;
         height       : auto;
     }
 
@@ -62,7 +63,7 @@
         line-height  : 24px;
         margin-bottom: 0;
         padding      : 0;
-        margin-left  : 40px;
+        margin  : 0 0 0 40px;
     }
 
     .icon1 {
