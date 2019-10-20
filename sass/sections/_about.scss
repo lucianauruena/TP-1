@@ -9,10 +9,21 @@
         padding-left : 15px;
         margin-right : auto;
         margin-left  : auto;
+
+        @include web {
+            max-width: 1140px;
+        }
     }
 
     .header {
-        display: block;
+        display  : block;
+        max-width: 540px;
+        margin   : 0 auto;
+
+        p {
+            color: $shuttlegrey;
+
+        }
     }
 
     h3 {
@@ -25,6 +36,8 @@
 
     p {
         margin: 0;
+        color : $charcoal;
+
     }
 
     .header-description {
@@ -37,11 +50,18 @@
         font-size  : 16px;
         margin     : 0 0 30px 0;
         line-height: 26px;
+
+
     }
 
     .container-style {
         display  : flex;
         flex-wrap: wrap;
+
+        @include web {
+            width: 50%;
+        }
+
     }
 
     .icon-container {
@@ -93,6 +113,11 @@
         width        : 100%;
         padding-right: 15px;
         padding-left : 15px;
+
+        @include web {
+            width: 50%;
+
+        }
     }
 
     img {
@@ -105,9 +130,16 @@
         height   : auto;
     }
 
-    .more-info-container {
+    .desk-container2,
+    .desk-container3 {
         .description {
             padding: 32px 0 0;
+
+            @include web {
+                width: 50%;
+
+            }
+
 
             h4 {
                 font-weight: 600;
@@ -117,18 +149,42 @@
             }
 
             p {
-                padding: 0;
-                margin : 0 0 30px 0;
+                padding  : 0;
+                margin   : 0 0 30px 0;
                 font-size: 16px;
             }
         }
     }
-    .extra2{
+
+    .extra2 {
         padding-top: 6px;
     }
 
     #about .container-about h4 {
         font-weight: 600;
         font-size  : 24px;
+    }
+
+    .desk-container1 {
+        @include web {
+            display       : flex;
+            flex-direction: row-reverse;
+
+        }
+    }
+
+    .desk-container2 {
+        @include web {
+            display  : flex;
+            flex-wrap: row;
+        }
+    }
+
+    .desk-container3 {
+        @include web {
+            display       : flex;
+            flex-direction: row-reverse;
+
+        }
     }
 }

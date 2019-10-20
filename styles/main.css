@@ -63,12 +63,27 @@ div {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.header {
+  max-width: 540px;
+  margin: 0 auto;
+}
 
 #intro {
   padding: 100px 0 20px 0;
   position: relative;
   background-color: #1445b3;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  #intro {
+    padding: 200px 0 120px 0;
+  }
 }
 #intro .solutions {
   text-decoration: underline;
@@ -78,8 +93,16 @@ div {
   margin: 0 auto 25px auto;
   width: 80%;
 }
+@media (min-width: 768px) {
+  #intro .img-container {
+    width: 50%;
+    margin: 0;
+  }
+  #intro .img-container img {
+    margin: 0;
+  }
+}
 #intro .img-intro {
-  float: none;
   margin: 0 auto 25px auto;
   display: flex;
   flex-wrap: wrap;
@@ -93,19 +116,37 @@ div {
 #intro .info-intro {
   color: white;
   text-align: center;
-  float: none;
   margin: auto;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #intro .info-intro {
+    margin: 0;
+  }
 }
 #intro h2 {
   font-size: 34px;
   margin-bottom: 30px;
   font-weight: 800;
 }
+@media (min-width: 768px) {
+  #intro h2 {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0;
+  }
+}
 #intro .hero-button {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  #intro .hero-button {
+    flex-direction: row;
+  }
 }
 #intro .hero-button a {
   background: #007bff;
@@ -121,6 +162,18 @@ div {
   margin: 0 0 20px 0;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  #intro .hero-button a {
+    margin: 0 20px 20px 0;
+  }
+}
+@media (min-width: 768px) {
+  #intro .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 
 #about {
   background: white;
@@ -134,8 +187,18 @@ div {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-width: 768px) {
+  #about .container {
+    max-width: 1140px;
+  }
+}
 #about .header {
   display: block;
+  max-width: 540px;
+  margin: 0 auto;
+}
+#about .header p {
+  color: #556877;
 }
 #about h3 {
   font-size: 36px;
@@ -146,6 +209,7 @@ div {
 }
 #about p {
   margin: 0;
+  color: #444;
 }
 #about .header-description {
   text-align: center;
@@ -159,6 +223,11 @@ div {
 #about .container-style {
   display: flex;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  #about .container-style {
+    width: 50%;
+  }
 }
 #about .icon-container {
   padding: 0 0 30px 0;
@@ -203,6 +272,11 @@ div {
   padding-right: 15px;
   padding-left: 15px;
 }
+@media (min-width: 768px) {
+  #about .container-img {
+    width: 50%;
+  }
+}
 #about img {
   vertical-align: middle;
   border-style: none;
@@ -211,15 +285,24 @@ div {
   max-width: 100%;
   height: auto;
 }
-#about .more-info-container .description {
+#about .desk-container2 .description,
+#about .desk-container3 .description {
   padding: 32px 0 0;
 }
-#about .more-info-container .description h4 {
+@media (min-width: 768px) {
+  #about .desk-container2 .description,
+#about .desk-container3 .description {
+    width: 50%;
+  }
+}
+#about .desk-container2 .description h4,
+#about .desk-container3 .description h4 {
   font-weight: 600;
   font-size: 24px;
   margin: 0 0 20px 0;
 }
-#about .more-info-container .description p {
+#about .desk-container2 .description p,
+#about .desk-container3 .description p {
   padding: 0;
   margin: 0 0 30px 0;
   font-size: 16px;
@@ -230,6 +313,24 @@ div {
 #about #about .container-about h4 {
   font-weight: 600;
   font-size: 24px;
+}
+@media (min-width: 768px) {
+  #about .desk-container1 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 768px) {
+  #about .desk-container2 {
+    display: flex;
+    flex-wrap: row;
+  }
+}
+@media (min-width: 768px) {
+  #about .desk-container3 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 #services {
@@ -272,6 +373,12 @@ div {
   box-sizing: border-box;
   height: auto;
 }
+@media (min-width: 768px) {
+  #services .box {
+    width: 40%;
+    margin: 0 20px 40px;
+  }
+}
 #services i {
   position: absolute;
   font-size: 64px;
@@ -309,6 +416,13 @@ div {
 }
 #services .icon6 {
   color: #4680ff;
+}
+@media (min-width: 768px) {
+  #services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .choose {
@@ -397,7 +511,6 @@ div {
 }
 .portfolio .header {
   text-align: center;
-  margin: 0px;
 }
 .portfolio p {
   color: white;
@@ -867,18 +980,34 @@ div {
 }
 
 #header {
-  display: block;
   height: 60px;
   background: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   position: fixed;
   z-index: 99999;
   width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #header {
+    height: 80px;
+  }
+}
+#header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  padding: 10px 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #header .header-container {
+    max-width: 1100px;
+  }
 }
 #header .button-nav-mobile {
   right: 0;
@@ -889,8 +1018,12 @@ div {
   outline: none !important;
   line-height: 1;
   cursor: pointer;
-  margin-right: 18px;
   color: #00458F;
+}
+@media (min-width: 768px) {
+  #header .button-nav-mobile {
+    display: none;
+  }
 }
 #header .button {
   overflow: visible;
@@ -923,12 +1056,102 @@ div {
   height: auto;
   vertical-align: middle;
 }
-#header .main-nav {
+#header .main-nav,
+#header .main-nav * {
   margin: 0;
   padding: 0;
   list-style: none;
-  float: right !important;
-  display: none !important;
+  display: none;
+}
+#header .main-nav li,
+#header .main-nav * li {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+#header .main-nav a,
+#header .main-nav span,
+#header .main-nav * a,
+#header .main-nav * span {
+  padding: 10px 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #00458F;
+  text-decoration: none;
+  font-size: 14px;
+}
+#header .main-nav .chevron,
+#header .main-nav * .chevron {
+  display: inline-block;
+  font-size: 10px;
+  padding-left: 5px;
+}
+#header .main-nav a:hover,
+#header .main-nav span:hover,
+#header .main-nav * a:hover,
+#header .main-nav * span:hover {
+  color: #007bff;
+}
+#header .main-nav .dropdown-submenu,
+#header .main-nav .dropdown-submenu2,
+#header .main-nav * .dropdown-submenu,
+#header .main-nav * .dropdown-submenu2 {
+  position: relative;
+}
+#header .main-nav .dropdown-submenu ul,
+#header .main-nav .dropdown-submenu2 ul,
+#header .main-nav * .dropdown-submenu ul,
+#header .main-nav * .dropdown-submenu2 ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+  top: 100%;
+}
+#header .main-nav .dropdown-submenu li,
+#header .main-nav .dropdown-submenu2 li,
+#header .main-nav * .dropdown-submenu li,
+#header .main-nav * .dropdown-submenu2 li {
+  display: block;
+  min-width: 180px;
+  position: relative;
+}
+#header .main-nav .dropdown-submenu a,
+#header .main-nav .dropdown-submenu span,
+#header .main-nav .dropdown-submenu2 a,
+#header .main-nav .dropdown-submenu2 span,
+#header .main-nav * .dropdown-submenu a,
+#header .main-nav * .dropdown-submenu span,
+#header .main-nav * .dropdown-submenu2 a,
+#header .main-nav * .dropdown-submenu2 span {
+  padding: 10px 20px;
+}
+#header .main-nav .dropdown-submenu2 span,
+#header .main-nav * .dropdown-submenu2 span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .main-nav .dropdown-submenu2 ul,
+#header .main-nav * .dropdown-submenu2 ul {
+  top: 0;
+  left: 100%;
+}
+#header .main-nav .dropdown-submenu:hover > ul,
+#header .main-nav * .dropdown-submenu:hover > ul {
+  display: block;
+}
+#header .main-nav .dropdown-submenu2:hover > ul,
+#header .main-nav * .dropdown-submenu2:hover > ul {
+  display: block;
+}
+@media (min-width: 768px) {
+  #header .main-nav,
+#header .main-nav * {
+    display: block;
+  }
 }
 
 #contact {
