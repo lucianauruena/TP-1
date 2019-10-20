@@ -1,3 +1,5 @@
+//*FORM de Contact us *//
+
 #contact {
 
     form {
@@ -9,7 +11,7 @@
         border         : 0;
         border-radius  : 20px;
         padding        : 8px 30px;
-        color          : #fff;
+        color          : $white;
         transition     : 0.3s;
         font-family    : $fuenteparrafos;
         text-decoration: none;
@@ -29,8 +31,8 @@
         padding         : .375rem .75rem;
         font-weight     : 400;
         line-height     : 1.5;
-        color           : #495057;
-        background-color: #fff;
+        color           : $tuna;
+        background-color: $white;
     }
 
     .form-control {
@@ -40,10 +42,42 @@
         padding         : .375rem .75rem;
         font-weight     : 400;
         line-height     : 1.5;
-        color           : #495057;
+        color           : $tuna;
         background-color: $white;
         background-clip : padding-box;
-        border          : 1px solid #ced4da;
+        border          : 1px solid $linkwater;
         transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+}
+
+
+
+//* FORM del Footer *//
+
+.footer {
+    form {
+        display: flex;
+    }
+
+    input {
+        background-color: $white;
+        border          : 0;
+        padding         : 6px 8px;
+        width           : 65%;
+        box-sizing: border-box;
+
+    }
+
+    button {
+        background : $dodgerblue;
+        border     : 0;
+        width      : 35%;
+        padding    : 6px 0;
+        text-align : center;
+        color      : $white;
+        transition : 0.3s;
+        cursor     : pointer;
+        font-family: $fuenteparrafos;
+        font-size  : 14px;
     }
 }

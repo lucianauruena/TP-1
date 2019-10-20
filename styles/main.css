@@ -4,12 +4,15 @@
 /* color de fondo de secciones azules */
 /* color azul oscuro de las secciones e icono del hero*/
 /* azul palido de secciones y fondo de los botones de Our Portfolio*/
+/* colores del Form*/
 /* colores de letras */
 /* color de SOLUTIONS en el hero */
 /* color de los titulos */
 /*color de los parrafos */
 /* lineas de texto claras */
 /* color del texto general en body */
+/*color footer, algunas letras*/
+/* color del form*/
 /* color de los botones, iconos y links */
 /* color iconos de why choose us? */
 /*color de botones deslizantes */
@@ -582,13 +585,13 @@ div {
 
 .footer {
   background: #004a99;
-  padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
   display: block;
+  box-sizing: border-box;
 }
 .footer h3 {
-  color: #fff;
+  color: white;
   text-align: initial;
   font-size: 36px;
   margin: 0 0 20px 0;
@@ -601,27 +604,81 @@ div {
   line-height: 24px;
   margin-bottom: 0;
 }
-
-.footer-top {
-  background: #004a99;
-  padding: 60px 0 30px 0;
+.footer h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.footer .list-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .list-footer li {
+  padding: 8px 0px;
+}
+.footer .list-footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+.footer .icon-footer {
   box-sizing: border-box;
 }
-
-.container-footer {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.footer .icon-footer i {
+  background-color: #007bff;
+  font-size: 18px;
+  display: inline-block;
+  color: white;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  transition: 0.3s;
 }
-
-.footer-info {
+.footer .contact-footer {
+  margin: 0 0 30px;
+}
+.footer .contact-footer p {
+  margin: 0;
+  line-height: 26px;
+}
+.footer .footer-top {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+.footer .our-new p {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 0 30px;
+}
+.footer .footer-info {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   margin-bottom: 30px;
+}
+.footer .footer-info p {
+  font-family: "Montserrat", sans-serif;
+}
+.footer .copyright-footer {
+  background-color: #00458F;
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+.footer .copyright-footer span {
+  font-weight: bolder;
 }
 
 .clientssec {
@@ -751,8 +808,11 @@ div {
 }
 #contact p {
   padding: 0 0 10px 36px;
-  line-height: 28px;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #ecf5ff;
 }
 #contact .info {
   box-sizing: border-box;
@@ -810,7 +870,7 @@ div {
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
-  color: #fff;
+  color: white;
   transition: 0.3s;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
@@ -827,7 +887,7 @@ div {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: white;
 }
 #contact .form-control {
   display: block;
@@ -841,6 +901,29 @@ div {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.footer form {
+  display: flex;
+}
+.footer input {
+  background-color: white;
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+  box-sizing: border-box;
+}
+.footer button {
+  background: #007bff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

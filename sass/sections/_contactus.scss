@@ -4,15 +4,20 @@
 
 
     p {
-        padding    : 0 0 10px 36px;
-        line-height: 28px;
-        font-size  : 14px;
+        padding      : 0 0 10px 36px;
+        font-size    : 13px;
+        line-height  : 24px;
+        margin-bottom: 0;
+        font-family  : $fuenteparrafos;
+        color        : $aliceblue;
 
     }
 
-    .info {box-sizing: border-box;
+    .info {
+        box-sizing: border-box;
 
     }
+
     .icon-contact {
         font-size  : 32px;
         color      : $dodgerblue;
