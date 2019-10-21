@@ -47,6 +47,9 @@
         }
     }
 
+    .box:hover {
+        transform: translateY(-5px)
+    }
 
     i {
         position  : absolute;
@@ -76,7 +79,6 @@
         color: $brilliantrose;
 
     }
-
 
     .icon2 {
         color: $goldenpoppy;

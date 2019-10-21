@@ -2,6 +2,12 @@
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
     padding   : 60px 0;
 
+    .container {
+        @include web {
+            max-width: 100%;
+        }
+    }
+
 
     p {
         font-size  : 14px;
@@ -12,22 +18,39 @@
 
     }
 
+    .name-mail {
+        @include web {
+            display       : flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            input {width: 49%;}
+        }
+    }
+
     .contact-info {
         margin: 30px 0 0;
+
+        @include web {
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-evenly;
+
+        }
     }
 
     .info {
-        box-sizing : border-box;
-        display    : flex;
+        box-sizing: border-box;
+        display   : flex;
     }
 
     .icon-contact {
-        font-size      : 24px;
-        color          : $dodgerblue;
-        line-height    : 1;
-        width          : 40px;
-        height         : 40px;
-        display        : flex;
+        font-size  : 24px;
+        color      : $dodgerblue;
+        line-height: 1;
+        width      : 40px;
+        height     : 40px;
+        display    : flex;
     }
 
     section {
@@ -50,6 +73,12 @@
     .map-details {
         border: 0;
         width : 100%;
+
+        @include web {
+            width: 49%;
+            ;
+
+        }
 
     }
 
@@ -78,5 +107,20 @@
         resize  : vertical;
     }
 
+    .map-info {
+        @include web {
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-between;
+
+        }
+    }
+
+    .info-container {
+        @include web {
+            width: 49%;
+
+        }
+    }
 
 }
