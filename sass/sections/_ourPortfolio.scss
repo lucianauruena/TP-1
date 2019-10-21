@@ -47,6 +47,14 @@
         color     : $white;
     }
 
+    .portfolio-container {
+        @include web {
+            display  : flex;
+            flex-wrap: wrap;
+
+        }
+    }
+
     .card {
         position     : relative;
         overflow     : hidden;
@@ -55,6 +63,11 @@
         width        : 100%;
         padding-right: 15px;
         padding-left : 15px;
+
+        @include web {
+            width: 33%;
+
+        }
 
         .card-container {
             overflow        : hidden;
@@ -104,6 +117,8 @@
             .title {
                 text-align: center;
             }
+
+
         }
 
         .networks {
@@ -137,5 +152,4 @@
         background-size: cover;
         width          : 100%;
     }
-
 }

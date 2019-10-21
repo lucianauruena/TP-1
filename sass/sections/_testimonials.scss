@@ -13,9 +13,14 @@
 
     .container {
         h3 {
+            color      : $black;
             font-size  : 20px;
             font-weight: bold;
             margin     : 10px 0 5px 0;
+
+            @include web {
+                text-align: left;
+            }
         }
 
         h4 {
@@ -28,7 +33,7 @@
     }
 
     p {
-        color      : $shuttlegrey;
+        color      : $charcoal;
         font-style : italic;
         font-weight: 400;
         margin     : 0 0 15px 0;
@@ -41,88 +46,115 @@
 
         img {
             max-width    : 100%;
-            height       : auto;
             border-radius: 50%;
             width        : 120px;
+            height       : 120px;
         }
     }
-}
 
-/* Carrusel */
-.carrusel {
-    display   : block;
-    position  : relative;
-    height    : 354px;
-    margin    : 0;
-    padding   : 0;
-    overflow  : hidden;
-    list-style: none;
 
-    .cards {
-        display: flex;
-        width  : 500%; // 100% por cada testimonio
-    }
-
-    /* para desplazar las cards */
-    .radio-button:nth-of-type(1):checked~.cards {
-        transform : translate3d(0%, 0px, 0px);
-        transition: all 0.25s ease 0s;
-    }
-
-    .radio-button:nth-of-type(2):checked~.cards {
-        transform : translate3d(-20%, 0px, 0px);
-        transition: all 0.25s ease 0s;
-    }
-
-    .radio-button:nth-of-type(3):checked~.cards {
-        transform : translate3d(-40%, 0px, 0px);
-        transition: all 0.25s ease 0s;
-    }
-
-    .radio-button:nth-of-type(4):checked~.cards {
-        transform : translate3d(-60%, 0px, 0px);
-        transition: all 0.25s ease 0s;
-    }
-
-    .radio-button:nth-of-type(5):checked~.cards {
-        transform : translate3d(-80%, 0px, 0px);
-        transition: all 0.25s ease 0s;
-    }
-
-    /* para pintar el boton activo */
-    .radio-button:nth-of-type(1):checked~.buttons label:nth-of-type(1),
-    .radio-button:nth-of-type(2):checked~.buttons label:nth-of-type(2),
-    .radio-button:nth-of-type(3):checked~.buttons label:nth-of-type(3),
-    .radio-button:nth-of-type(4):checked~.buttons label:nth-of-type(4),
-    .radio-button:nth-of-type(5):checked~.buttons label:nth-of-type(5) {
-        background-color: $dodgerblue;
-    }
-
-    input[type=radio] {
-        display: none;
-    }
-
-    li {
-        list-style: none;
+    /* Carrusel */
+    .carrusel {
         display   : block;
-        width     : 100%;
-        padding   : 0 15px;
-    }
+        position  : relative;
+        height    : 354px;
+        margin    : 0;
+        padding   : 0;
+        overflow  : hidden;
+        list-style: none;
 
-    .buttons {
-        position  : absolute;
-        left      : 0;
-        right     : 0;
-        bottom    : 0;
-        z-index   : 999;
-        text-align: center;
+        @include web {
+            width : 730px;
+            margin: 0 auto;
+            height: 180px;
 
-        label {
-            background-color: $gainsboro;
-            padding         : 6px;
-            margin          : 0 3px;
-            border-radius   : 50%;
-            display         : inline-block;
+        }
+
+        .testimonial-text {
+            @include web {
+                text-align : left;
+                margin-left: 30px;
+            }
+
+        }
+
+        .cards {
+            display: flex;
+            width  : 500%; // 100% por cada testimonio
+        }
+
+        /* para desplazar las cards */
+        .radio-button:nth-of-type(1):checked~.cards {
+            transform : translate3d(0%, 0px, 0px);
+            transition: all 0.25s ease 0s;
+        }
+
+        .radio-button:nth-of-type(2):checked~.cards {
+            transform : translate3d(-20%, 0px, 0px);
+            transition: all 0.25s ease 0s;
+        }
+
+        .radio-button:nth-of-type(3):checked~.cards {
+            transform : translate3d(-40%, 0px, 0px);
+            transition: all 0.25s ease 0s;
+        }
+
+        .radio-button:nth-of-type(4):checked~.cards {
+            transform : translate3d(-60%, 0px, 0px);
+            transition: all 0.25s ease 0s;
+        }
+
+        .radio-button:nth-of-type(5):checked~.cards {
+            transform : translate3d(-80%, 0px, 0px);
+            transition: all 0.25s ease 0s;
+        }
+
+        /* para pintar el boton activo */
+        .radio-button:nth-of-type(1):checked~.buttons label:nth-of-type(1),
+        .radio-button:nth-of-type(2):checked~.buttons label:nth-of-type(2),
+        .radio-button:nth-of-type(3):checked~.buttons label:nth-of-type(3),
+        .radio-button:nth-of-type(4):checked~.buttons label:nth-of-type(4),
+        .radio-button:nth-of-type(5):checked~.buttons label:nth-of-type(5) {
+            background-color: $dodgerblue;
+        }
+
+        input[type=radio] {
+            display: none;
+        }
+
+        li {
+            list-style: none;
+            display   : block;
+            width     : 100%;
+            padding   : 0 15px;
+        }
+
+        .testimonial {
+            @include web {
+                display       : flex;
+                flex-direction: row;
+            }
+
+        }
+
+        .buttons {
+            position  : absolute;
+            left      : 0;
+            right     : 0;
+            bottom    : 0;
+            z-index   : 999;
+            text-align: center;
+
+            label {
+                background-color: $gainsboro;
+                padding         : 6px;
+                margin          : 0 3px;
+                border-radius   : 50%;
+                display         : inline-block;
+            }
         }
     }
+
+
+
 }

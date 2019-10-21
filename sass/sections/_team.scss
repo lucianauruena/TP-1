@@ -1,4 +1,13 @@
 .team {
+    .members-container {
+        @include web {
+            display       : flex;
+            flex-direction: row;
+            max-width     : 1140px;
+            margin        : 0 auto;
+        }
+    }
+
     h3 {
         text-align: center;
         color     : $nileblue;
@@ -93,6 +102,7 @@
         transition: none;
         color     : white;
     }
+
     img {
         max-width: 100%;
         height   : auto;
