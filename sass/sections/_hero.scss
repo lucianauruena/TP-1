@@ -20,9 +20,10 @@
         width : 80%;
 
         @include web {
-            width: 50%;
+            width : 50%;
             margin: 0;
-            img{
+
+            img {
                 margin: 0;
             }
         }
@@ -46,6 +47,7 @@
         text-align: center;
         margin    : auto;
         text-align: center;
+
         @include web {
             margin: 0;
         }
@@ -61,7 +63,7 @@
             font-size    : 48px;
             font-weight  : 700;
             text-align   : left;
-            margin-top: 0;
+            margin-top   : 0;
         }
     }
 
@@ -69,13 +71,15 @@
         display       : flex;
         align-items   : center;
         flex-direction: column;
-        @include web {flex-direction: row;
+
+        @include web {
+            flex-direction: row;
 
         }
 
+
         a {
-            background     : $dodgerblue;
-            border         : 2px solid $dodgerblue;
+            border         : 2px solid $white;
             color          : $white;
             font-family    : $fuentetitulo;
             font-size      : 14px;
@@ -86,16 +90,27 @@
             transition     : 0.5s;
             margin         : 0 0 20px 0;
             text-decoration: none;
-            @include web {margin: 0 20px 20px 0; 
 
+            @include web {
+                margin: 0 20px 20px 0;
             }
+
         }
+
     }
+
+    a:hover {
+        background  : $dodgerblue;
+        border-color: $dodgerblue;
+        color       : $white;
+
+    }
+
 
     .container {
         @include web {
-            display       : flex;
-            flex-direction: row-reverse;
+            display        : flex;
+            flex-direction : row-reverse;
             justify-content: space-between;
         }
     }

@@ -150,8 +150,7 @@ div {
   }
 }
 #intro .hero-button a {
-  background: #007bff;
-  border: 2px solid #007bff;
+  border: 2px solid white;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -167,6 +166,11 @@ div {
   #intro .hero-button a {
     margin: 0 20px 20px 0;
   }
+}
+#intro a:hover {
+  background: #007bff;
+  border-color: #007bff;
+  color: white;
 }
 @media (min-width: 768px) {
   #intro .container {
