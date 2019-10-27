@@ -2,3 +2,11 @@
 @import 'sections/styles';
 @import 'components/card';
 
+/*
+El trabajo está muy bien, pero hay un detalle con el uso de clases.
+Se utilizan muchas clases con el mismo nombre pero que no comparten estilos.
+Un buen ejemplo es .header. Se repite una y otra vez pero los estilos están 
+con mucha especificidad por sección. Cada sección define su propia clase 
+header. Por ahí podría hacerse una clase .header con cosas comunes
+y agregar más estilos, o pisarlos, con esa especificidad.
+*/
