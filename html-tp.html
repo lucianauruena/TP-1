@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wayne Enterprises</title>
+    <!-- Borrar comentarios -->
     <!--     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styles/main.css">
@@ -86,6 +87,7 @@
             <!--header-->
             <header class="header">
                 <h3>About us</h3>
+                <!-- Esto es un h4, es un subtitulo -->
                 <p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore
                     et
@@ -107,6 +109,7 @@
                         aliquip ex ea commodo consequat.</p>
 
 
+                    <!-- Falta el hover sobre cada icono -->
                     <div class="icon-container">
                         <div class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
                         <div class="info">
@@ -199,10 +202,12 @@
             <!--header-->
             <header class="header">
                 <h3>Services</h3>
+                <!-- Esto es un subtitulo, un <h4> tendria sentido -->
                 <p class="info-services">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo
                     abhorreant
                     vituperatoribus.</p>
             </header>
+            <!-- los iconos usados pueden ser solamente un <i>, no necesitan el div alrededor.-->
             <div class="box-container">
                 <div class="box">
                     <div class="icon1"><i class="fa fa-bullseye" aria-hidden="true"></i></div>
@@ -268,6 +273,7 @@
             <!--header-->
             <header class="header">
                 <h3>Why choose us?</h3>
+                <!-- Es un subtitulo -->
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant
                     vituperatoribus.</p>
             </header>
@@ -333,6 +339,7 @@
             <header class="header">
                 <h3>Our Portfolio</h3>
             </header>
+            <!-- Este primer <div> no es necesario. -->
             <div class="menu-port">
                 <ul class="menu-list">
                     <li class="menu-details activo">ALL</li>
@@ -341,6 +348,7 @@
                     <li class="menu-details ">WEB</li>
                 </ul>
             </div>
+            <!-- El div card-container podria sacarse -->
             <div class="portfolio-container">
                 <div class="card">
                     <div class="card-container">
@@ -488,6 +496,9 @@
             <h3>Testimonials</h3>
         </header>
         <div class="container">
+            <!-- aca esta muy bien usado el h3 y h4 -->
+            <!-- como detalle, yo le agregaria un cursor:pointer al bullet del carrusel -->
+            <!-- para que se entienda que es posible interactuar -->
             <ul class="carrusel">
                 <input type="radio" name="radio-button" class="radio-button" id="1" checked />
                 <input type="radio" name="radio-button" class="radio-button" id="2" />
@@ -569,6 +580,9 @@
     <!--
         =============================== SECTION TEAM =========================================
     -->
+    <!-- Los circulos de cada persona del team estan bien, pero necesitan tener tanto ancho como alto 
+    definidos para hacer un circulo perfecto. Si yo achico la pantalla a unos 500px me queda mal 
+    armado el circulo, y si lo agrando se deforma. -->
     <section id="team" class="section team">
         <header class="header">
             <h3>Team</h3>
@@ -581,6 +595,7 @@
                     <div class="member-info">
                         <div class="member-info-content">
                             <h4>Ben Affleck</h4>
+                            <!-- Esto es un subtitulo -->
                             <span>Chief Executive Officer</span>
                             <div class="social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -656,11 +671,15 @@
         <div class="container-clientes">
             <header class="header">
                 <h3>Our Clients</h3>
+                <!-- Es un subtitulo -->
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome
                     nida.
                 </p>
             </header>
 
+            <!-- fadeInUp no-Gutters son clases que estan en la pagina de muestra. 
+                 En el caso de no-gutters, al menos estan cumpliendo con su objetivo
+                 de que no haya gutter, pero fadeInUp no existe en la seccion. -->
             <div class="clientes-comun fadeInUp no-Gutters">
                 <div class="client-logo">
                     <img src="img/clients/client-1.png">
@@ -760,6 +779,7 @@
                 <div class="column3-footer">
                     <div class="contact-footer">
                         <h6>CONTACT US</h6>
+                        <!-- la direccion podria ir dentro de un <address>-->
                         <p>A108 Adam Street </p>
                         <p>New York, NY 535022</p>
                         <p>United States</p>

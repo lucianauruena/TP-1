@@ -2,3 +2,9 @@
 @import 'sections/styles';
 @import 'components/card';
 
+/*
+El trabajo está muy bien, pero hay un detalle con la organizacion del sass
+Se usa en /components/_form, un form para cada seccion. La idea es que 
+haya un estilos general de form y dentro de /sections/contact o 
+/section/footer, la especificacion de la aplicacion en cada caso.
+*/
